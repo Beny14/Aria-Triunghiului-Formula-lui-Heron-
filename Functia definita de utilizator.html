@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aria Triunghiului - Formula lui Heron</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="author" content="Andrei">
+	<head>
+	<body>
+
+	<script type="text/javascript">
+
+		function Per_Triunghi(a,b,c){
+			var P = a + b + c;
+				document.write("Perimetrul acestui triunghi este: " + P);
+			return P;
+		}
+			Per_Triunghi(4,4,2);
+			document.write("<br>");
+
+		function Heron_Triunghi(a,b,c){
+			var S = (a + b + c) / 2; //semiperimetrul triunghiului
+				document.write("Semiperimetrul triunghiului este: " + S);
+				document.write("<br>");
+			var A = Math.sqrt(S*(S - a)*(S - b)*(S - c));  //formula lui Heron's
+				document.write("Aria triunghiului in baza formulei lui Heron's: " + A);
+		}
+	Heron_Triunghi(4,4,2);
+
+	</script>
+	
+	</body>
+</html>
